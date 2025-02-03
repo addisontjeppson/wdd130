@@ -1,35 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ /*  
+--heading-font: "Nunito Sans";
+--paragraph-font: Roboto, Helvetica, sans-serif; 
+*/
+
+
+
 div {
     max-width: 1600;
     margin: 0 auto;
 }
-
-.logo {
-    width: 80px;
+main section {
+    text-align: center;
 }
-.icon {
-    width: 80px;
+main section img {
+    box-sizing: border-box;
+}
+main h2 {
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
 }
 
-
+.navigation {
+margin-top: 50px;
+}
 nav a {
     text-align: center;
     color: #132732;
     background-color: #f1f1ed;
     text-decoration: none;
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
+    padding: 35px;
+    margin-top: 50px;
 }
 nav a:hover {
     color: #f1f1ed;
     background-color: #db6d1e;
 }
-
-
-
-.home-title {
-    color: #db6d1e;
-}
 h4 {
     color: #132732;
 }
+h2 {
+    margin: 0;
+}
+
+.home-title {
+    color: #db6d1e;
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
 
 
 #hero-img {
@@ -38,53 +57,84 @@ h4 {
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
-
-.button-box {
-    text-align: center;
+#hero-msg h4 {
+    font-family: Roboto, Helvetica, sans-serif;
 }
-
-main section {
-    text-align: center;
-}
-
 #background {
     height: 725px;
     background-color: #132732
 }
+#logo_link {
+    padding-top: 5px;
+}
+
+.button-box {
+    text-align: center;
+}
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+
+
 
 
 body {
     background-color: #f1f1ed;
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #2589BD;
 }
 
-
+.card-img {
+    border: 10px solid #132732;
+}
 .book, .join {
     color: #f1f1ed;
     background-color: #db6d1e;
     text-decoration: none;
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     color: #f1f1ed;
     background-color: #2589BD;
 }
-
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
 .msg {
     color: #2589BD;
+    padding: 35px;
 }
 .msg h2 {
     color: #db6d1e;
+    font-family: 'Nunito Sans', Roboto, Helvetica, sans-serif;
 }
 .msg p {
     color: #2589BD;
+    font-family: Roboto, Helvetica, sans-serif;
+    padding-bottom: 15px;
+
 }
 
 
 footer {
     color: #f1f1ed;
     background-color: #132732;
+    font-family: Roboto, Helvetica, sans-serif;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -98,4 +148,7 @@ footer a {
 }
 footer a:hover {
     color: #db6d1e;
+}
+footer .social img {
+    padding-top: 15px;
 }

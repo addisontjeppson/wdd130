@@ -1,0 +1,18 @@
+html body {
+    margin: 0;
+    background-color: dimgrey;
+}
+
+.graphic {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    border: 20px solid rgb(49, 49, 49);
+    margin: 30px;
+}
+#banner {
+    width: 100%;
+    height: auto;
+}
+

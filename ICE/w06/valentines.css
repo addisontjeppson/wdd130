@@ -1,0 +1,16 @@
+body {
+    background-image: url(images/valentines.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center top;
+}
+
+#wrapper {
+ margin: 10%;
+ padding: 5%;
+ background-color: rgba(243, 181, 181, .95);
+}
+
+h1, h2, p, li, footer {
+    font-family: cursive ;
+}

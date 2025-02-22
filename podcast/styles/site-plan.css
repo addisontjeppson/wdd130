@@ -21,15 +21,18 @@ Fonts are separated by a | */
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #d7503e;  /* headlines on a white background */ 
+  --headline-color-on-color: #f39533; /* headlines on a colored background */ 
+  --headline-shadow-on-color: #d7503e;
+  --paragraph-color-on-white: #313f55; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #f9ead1; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #313f55;
+  --nav-link-color: #f9ead1;
+  --nav-background-color: #313f55;
+  --nav-hover-link-color: #313f55;
+  --nav-hover-background-color: #f39533;
+  --nav-shadow-on-color: #f39533; 
+  --nav-shadow-on-hover: #d7503e;
 }
 
 
@@ -45,6 +48,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 75%;
+  height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -66,6 +71,7 @@ header {
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
+  text-shadow: var(--headline-shadow-on-color) 3px 2px;
 }
 
 p {
@@ -125,10 +131,12 @@ nav a {
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
+  text-shadow: var(--nav-shadow-on-color) 1px 1px;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  text-shadow: var(--nav-shadow-on-hover) 1px 1px;
 }
 
 .sitemap {

@@ -34,8 +34,9 @@ body {
 
 .article-body {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .article-body .time-ago {
     margin-bottom: 0;
@@ -43,7 +44,9 @@ body {
 }
 .article-body .post-title {
     margin-top: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+.article-body p {
+    color: dimgrey;
 }
 
 
@@ -59,7 +62,7 @@ body {
     text-align: center;
     color: white;
     padding: 10px;
-    background-color:rgb(71, 100, 129) ;
+    background-color:rgb(75, 110, 146) ;
 
 }
 .post-stats h2, .post-stats p {

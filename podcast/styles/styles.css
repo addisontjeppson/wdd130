@@ -56,6 +56,8 @@ p {
     font-family: var(--paragraph-font);
     /* color: var(--paragraph-color-on-white); */
     padding: 1em;
+    text-align: center;
+    font-size: larger;
   }
 nav {
     background-color: var(--nav-background-color);
@@ -66,6 +68,9 @@ nav {
     display: inline-flex;
     font-family: var(--heading-font);
   }
+a {
+    text-decoration: none;
+}
 
 nav a {
     padding:1em;
@@ -96,15 +101,17 @@ header > h1, header > h2 {
     text-shadow: var(--headline-shadow-on-color) 3px 2px;
 }
 
-.main {
-    /* min-height: 100%; 
+.wrapper {
+    min-height: 100%; 
     display: flex;
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
     padding-left: 5%;
-    padding-right: 5%; */
+    padding-right: 5%;
 }
+
+
 section {
     padding: 25px;
     min-height: 100%; /* Ensures the container stretches at least to the viewport height */
@@ -115,6 +122,31 @@ section {
     padding-left: 5%;
     padding-right: 5%;
 }
+button {
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+}
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+nav button {
+    background-color: #d7503e;
+    color: #f9ead1;
+    margin: 10px;
+}
+nav button :hover{
+    background-color: inherit;
+}
+#map button {
+    margin-bottom: 10px;
+    background-color: #f9ead1;
+}
+button h2 {
+    color: #313f55;
+    padding: 5px;
+}
 #about {
     display: grid;
     background-color: var(--accent2-color);
@@ -122,11 +154,28 @@ section {
 #about p {
     color: var(--accent1-color);
 }
+#about img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+}
 #map {
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(3 1fr);
     background-color: var(--accent1-color);
+}
+#map .wrapper{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: repeat(3 1fr);
+
+}
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers content */
+    justify-content: center; /* Vertically centers content */
+    height: 100%; /* Make sure the parent has a defined height */
+    padding: 20px;
 }
 #map .msg {
     grid-column: 2/4;
@@ -135,7 +184,7 @@ section {
     color: var(--nav-link-color);
     font-size: large;
     border-radius: 15px;
-    justify-content: center;
+
 }
 #map .msg h1 {
     color: #f39533;
@@ -146,11 +195,15 @@ section {
     grid-column: 1/5;
     grid-row: 1/4
 }
+
 #cast {
+    background-color: #d7503e;
+}
+#cast .wrapper{
     display: grid;
     grid-template-columns: repeat(8 1fr);
-    grid-template-rows: 1fr 50px 1fr;
-    background-color: #d7503e;
+    grid-template-rows: 1fr auto 1fr;
+
 }
 #cast img {
     border: 10px solid #313f55;
@@ -177,10 +230,26 @@ section {
 #cast button {
     grid-column: 4/5;
     grid-row: 2/3;
+    display: flex;
+    background-color: #f9ead1;
+}
+#cast button h2 {
+    color: #313f55;
 }
 
 #contact-us {
     background-color: #f39533;
+}
+#contact-us h1 {
+    color: #313f55;
+    text-shadow: var(--secondary-color) 2px 2px;
+    font-size: xx-large;
+}
+#contact-us button {
+    background-color: #f9ead1;
+}
+#contact-us button h2 {
+    color: #;
 }
 
 section img {

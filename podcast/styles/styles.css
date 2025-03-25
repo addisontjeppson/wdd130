@@ -32,6 +32,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f9ead1;
 }
 
 header h1 {
@@ -236,6 +237,9 @@ button h2 {
 #cast button h2 {
     color: #313f55;
 }
+/* #cast button:hover #cast img {
+
+} */
 
 #contact-us {
     background-color: #f39533;
@@ -247,9 +251,6 @@ button h2 {
 }
 #contact-us button {
     background-color: #f9ead1;
-}
-#contact-us button h2 {
-    color: #;
 }
 
 section img {
@@ -279,4 +280,139 @@ footer a {
 }
 footer a:hover {
     color: var(--primary-color);
+}
+
+
+/* meet the cast */
+#cast-title {
+    background-color: #f9ead1;
+    margin: 0;
+    padding: 20px;
+}
+
+.pfp {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+}
+.pfp img {
+    border: 10px solid #313f55;
+    border-radius: 50%;
+}
+
+.pfp-container {
+    width: 300px;
+    height: 300px;
+}
+.blurb {
+    align-content: center;
+}
+.player-id-left{
+    background-color: #f9ead1;
+    align-content: center;
+    color: #313f55;
+    padding-bottom: 50px;
+
+}
+.player-id-right{
+    background-color: #d7503e;
+    align-content: center;
+    color: #f9ead1;
+    padding-bottom: 50px;
+    
+}
+.playerblurb {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+.player-id-right .pfp-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.player-id-right .blurb {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.player-id-left .pfp-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.player-id-left .blurb {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+/* player 1 pfp */
+
+#player1pfp, #characterpfp1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+#characterpfp1 {
+    opacity: 0; /* Initially hide the hover image */
+}
+.pfp:hover #characterpfp1 {
+    opacity: 1; /* Show the hover image on mouse hover */
+}
+.pfp:hover #player1pfp {
+    opacity: 0; /* Hide the default image on mouse hover */
+}
+
+/* player 2 pfp */
+
+#player2pfp, #characterpfp2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+
+}
+#characterpfp2 {
+    opacity: 0; /* Initially hide the hover image */
+}
+.pfp:hover #characterpfp2 {
+    opacity: 1; /* Show the hover image on mouse hover */
+}
+.pfp:hover #player2pfp {
+    opacity: 0; /* Hide the default image on mouse hover */
+}
+
+/* player 3 pfp */
+
+#player3pfp, #characterpfp3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+#characterpfp3 {
+    opacity: 0; /* Initially hide the hover image */
+}
+.pfp:hover #characterpfp3 {
+    opacity: 1; /* Show the hover image on mouse hover */
+}
+.pfp:hover #player3pfp {
+    opacity: 0; /* Hide the default image on mouse hover */
+}
+
+/* player 4 pfp */
+
+#player4pfp, #characterpfp4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+#characterpfp4 {
+    opacity: 0; /* Initially hide the hover image */
+}
+.pfp:hover #characterpfp4 {
+    opacity: 1; /* Show the hover image on mouse hover */
+}
+.pfp:hover #player4pfp {
+    opacity: 0; /* Hide the default image on mouse hover */
 }

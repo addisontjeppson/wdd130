@@ -237,9 +237,6 @@ button h2 {
 #cast button h2 {
     color: #313f55;
 }
-/* #cast button:hover #cast img {
-
-} */
 
 #contact-us {
     background-color: #f39533;
@@ -415,4 +412,42 @@ footer a:hover {
 }
 .pfp:hover #player4pfp {
     opacity: 0; /* Hide the default image on mouse hover */
+}
+
+/* map page */
+#splash-map {
+    background-color: #313f55;
+    border-top: 10px solid #f39533;
+    border-bottom: 10px solid #f39533;
+}
+#splash-map h1 {
+    color: #f39533;
+    text-shadow: #d7503e 1px 2px;
+    margin-top: 0px;
+}
+#map-img {
+    border-radius: 20px;
+}
+ul, li {
+    font-family: var(--paragraph-font);
+}
+li b {
+    color: #d7503e;
+}
+li b:hover {
+    text-decoration:underline;
+}
+#map-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+
+}
+#map-info p {
+    align-self: center;
+    font-size: 22px;
+    border-bottom: solid #d7503e;
+    border-top: solid #d7503e;
+    margin-right: 20px;
 }
